@@ -117,14 +117,14 @@ super + m
 #fullscreen screenshot save
 
 Print
-     maim ~/Pictures/(date).png && notify-send -a maim "Took a screenshot."
+     maim --hidecursor ~/Pictures/(date).png && notify-send -a maim "Took a screenshot."
 #cropped save
 super + Print
       maim --select ~/Pictures/(date) && notify-send "Area Captured"
 
 #  clipboard fullscreen
 shift+ Print
-     maim | xclip -selection clipboard -t image/png && notify-send "Screenshot copy to clipboard"
+     maim --hidecursor | xclip -selection clipboard -t image/png && notify-send "Screenshot copy to clipboard"
 
 # clipboard cropped
 super +shift+ Print
