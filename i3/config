@@ -214,7 +214,7 @@ bindsym $mod+r mode "resize"
    # -m  nic  cpu network_traffic \
 	#	 battery-upower time amixer \
 		
-		
+		#this is a change for undersatnding git
 
 
 #}
