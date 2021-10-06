@@ -10,8 +10,8 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 exec --no-startup-id feh --bg-fill   ~/Pictures/wallpaper/minimal.jpg
-exec --no-startup-d picom --config /home/sajedull/.config/picom/picom.conf
-
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
+exec --no-startup-id ibus-daemon --xim -d -r            
 set $mod Mod4
 new_window pixel 2   
 new_float pixel 5
@@ -166,7 +166,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh --forest
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh --shapes
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -218,5 +218,4 @@ bindsym $mod+r mode "resize"
 
 
 #}
-
 
